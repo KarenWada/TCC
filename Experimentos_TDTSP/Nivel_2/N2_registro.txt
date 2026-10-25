@@ -1,0 +1,29 @@
+Experimento — Nível 2
+
+Versão: N2_V1
+Prompt: Descrição do TDTSP + definição do problema e função objetivo.
+
+Instância: Instance_L_10_01.txt
+Tempo limite: 10 segundos
+Compilação: Sucesso
+Execução: Sucesso
+
+Resultados:
+Melhor valor encontrado: 1041
+Ótimo conhecido: 6830
+Melhor metaheurística: PSO
+Tempo total: 10,009 segundos
+Tempo até a melhor solução: 0,087 segundo
+
+Observações:
+O decoder compilou e executou sem erros aparentes. O modelo passou a considerar os tempos de serviço na evolução temporal, separando-os da função objetivo.
+Entretanto, o código interpretou incorretamente a quantidade de nós, considerando dois depósitos adicionais. A solução apresentou 11 random keys para uma instância de 10 clientes.
+O valor obtido foi inferior ao ótimo conhecido, indicando inconsistência na interpretação dos dados ou no cálculo da função objetivo.
+
+fscanf(arq, "%d", &num_clients);
+data.num_nodes = num_clients + 2;
+
+Conclusão:
+O Nível 2 apresentou melhorias na lógica temporal, mas o decoder ainda não foi validado.
+
+Próxima etapa: Nível 3 — acrescentar o formato das instâncias descrito no README.

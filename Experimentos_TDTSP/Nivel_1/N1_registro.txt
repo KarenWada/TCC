@@ -1,0 +1,26 @@
+Experimento — Nível 1
+
+Versão: N1_V1
+Prompt: Descrição básica do TDTSP + requisitos de integração com o RKO.
+
+Instância: Instance_L_10_01.txt
+Tempo limite: 10 segundos
+Compilação: Sucesso
+Execução: Sucesso
+
+Resultados:
+Melhor valor encontrado: 2347
+Ótimo conhecido: 6830
+Melhor metaheurística: GRASP
+Tempo total: 10,003 segundos
+Tempo até a melhor solução: 0,004 segundo
+
+Observações:
+O decoder compilou e executou sem erros aparentes. Entretanto, o valor encontrado foi inferior ao ótimo conhecido, indicando possível inconsistência no cálculo da função objetivo ou na interpretação dos dados.
+O código assume um formato de entrada sem conhecer a estrutura real das instâncias.
+fscanf(arq, "%d %d", &data.nNodes, &data.maxTime);
+
+Conclusão:
+O Nível 1 produziu um decoder executável, mas sua correção ainda não foi validada.
+
+Próxima etapa: Nível 2 — acrescentar a definição do problema e da função objetivo.

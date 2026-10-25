@@ -1,0 +1,59 @@
+Registro de versões — Nível 4
+
+N4_V1 — Primeira implementação
+
+Prompt: Prompt do Nível 3 acrescido de uma sugestão de decoder baseada em ordenação de random keys e busca local 2-opt.
+
+Código gerado: N4_V1.h
+
+Resultado da validação inicial:
+
+Instância: Instance_L_10_01.txt
+Compilação: bem-sucedida
+Execuções: 5
+Melhor resultado: 6830
+Média: 6830
+Ótimo conhecido: 6830
+Observação: A implementação realiza busca local 2-opt dentro de cada chamada ao decoder, repetindo a busca enquanto houver melhorias. Essa estratégia pode apresentar custo computacional elevado em instâncias maiores.
+
+N4_V2 — Revisão proposta
+Motivação: Investigar se uma orientação adicional sobre eficiência computacional produz uma implementação mais adequada para instâncias maiores.
+Alteração proposta no prompt: Acrescentar uma seção solicitando atenção ao custo computacional da busca local, à redução de avaliações desnecessárias e à definição de critérios de parada adequados.
+Estratégia mantida: Construção da rota por ordenação das random keys, seguida de busca local 2-opt com avaliação temporal.
+Situação: Aguardando geração e validação.
+
+Controle experimental
+A versão N4_V1 será preservada, sem modificações.
+A versão N4_V2 será registrada separadamente, incluindo o prompt utilizado, o código gerado e os resultados de validação.
+
+Os testes completos das 225 instâncias ainda não foram iniciados para o Nível 4.
+
+***************************************************************************
+
+N4_V2 — Implementação com orientação de eficiência
+
+Motivação: Investigar o efeito de acrescentar ao prompt do Nível 4 uma orientação sobre eficiência computacional, mantendo a estratégia de ordenação das random keys e busca local 2-opt.
+Alteração no prompt: Inclusão de uma seção solicitando atenção ao custo computacional do decoder, à redução de avaliações desnecessárias e à utilização de critérios de parada adequados.
+
+Código gerado: N4_V2.h
+Características da implementação:
+Construção da rota inicial pela ordenação crescente das random keys.
+Avaliação temporal dos deslocamentos, considerando os tempos de serviço.
+Aplicação de busca local 2-opt.
+Limitação da busca local a cinco passagens.
+Inversão dos trechos diretamente na rota, desfazendo movimentos que não produzem melhoria.
+Verificação do sucesso da leitura dos dados da instância.
+
+Diferenças em relação à N4_V1:
+A N4_V1 executa a busca local até não encontrar novas melhorias, sem um limite explícito de passagens, e cria uma cópia da rota para avaliar cada movimento.
+A N4_V2 limita a busca local a cinco passagens e evita a criação de uma cópia completa da rota a cada tentativa.
+Essas alterações podem reduzir o custo computacional, mas o limite de passagens também pode restringir a qualidade das soluções encontradas.
+
+Situação: Código gerado e analisado. Compilação e validação experimental ainda pendentes.
+Controle experimental
+As versões N4_V1 e N4_V2 serão preservadas separadamente.
+
+A N4_V1 concluiu os testes das 225 instâncias, com cinco execuções por instância.
+A N4_V2 será submetida aos mesmos testes, utilizando as mesmas instâncias, configurações e limites de tempo, permitindo comparar a qualidade das soluções obtidas.
+
+A comparação deverá considerar que a N4_V2 recebeu uma orientação adicional de eficiência no prompt.

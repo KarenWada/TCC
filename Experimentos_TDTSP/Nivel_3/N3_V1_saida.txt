@@ -1,0 +1,41 @@
+karen@KarenGarcia:~/RKO_Cpp_v2.0/Program$ ./runRKO ../Instances/KP/10_14_customers/Instance_L_10_01.txt 10
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_L_10_01.txt 
+Run: 1 
+Thread 8 executing MH_8 GRASP [0.00].
+Thread 0 executing MH_0 SA [0.00].
+Thread 3 executing MH_3 BRKGA [0.00].
+Thread 1 executing MH_1 ILS [0.00].
+Thread 9 executing MH_9 IPR [0.00].
+Thread 2 executing MH_2 VNS [0.00].
+Thread 6 executing MH_6 GA [0.00].
+Thread 4 executing MH_4 BRKGA-CS [0.00].
+Thread 5 executing MH_5 PSO [0.00].
+Thread 7 executing MH_7 LNS [0.00].
+Best solution: 8872.0000000000 (Thread: 9 - MH: IPR)
+Best solution: 7084.0000000000 (Thread: 8 - MH: GRASP)
+Best solution: 7080.0000000000 (Thread: 9 - MH: IPR)
+Best solution: 6830.0000000000 (Thread: 9 - MH: IPR)
+
+
+RKO: SA | ILS | VNS | BRKGA | BRKGA-CS | PSO | GA | LNS | GRASP | IPR | 
+Best MH: IPR 
+Instance: ../Instances/KP/10_14_customers/Instance_L_10_01.txt 
+sol: 0.163 0.895 0.011 0.742 0.038 0.355 0.739 0.134 0.014 0.070 
+ofv: 6830.00000
+Total time: 10.011
+Best time: 0.015
+
+
+Solution Pool:
+6830.00000 [IPR]
+6915.00000 [IPR]
+6953.00000 [BRKGA]
+6982.00000 [IPR]
+7070.00000 [IPR]
+7078.00000 [IPR]
+7080.00000 [IPR]
+7084.00000 [GRASP]
+7117.00000 [VNS]
+7209.00000 [IPR]

@@ -1,0 +1,25 @@
+Experimento — Nível 3
+
+Versão: N3_V1
+Prompt: Nível 2 + formato das instâncias descrito no README.
+
+Instância: Instance_L_10_01.txt
+Tempo limite: 10 segundos
+Compilação: Sucesso
+Execução: Sucesso
+
+Resultados:
+Melhor valor encontrado: 6830
+Ótimo conhecido: 6830
+Melhor metaheurística: IPR
+Tempo total: 10,011 segundos
+Tempo até a melhor solução: 0,015 segundo
+
+Observações:
+O decoder interpretou a quantidade de nós, os tempos de serviço e as matrizes temporais conforme o README.
+O valor encontrado coincidiu com o ótimo conhecido da instância.
+
+Conclusão:
+O Nível 3 produziu um decoder funcional nesta instância, com resultado compatível com o ótimo conhecido. A validação em outras instâncias ainda é necessária.
+
+Próxima etapa: Nível 4 — acrescentar a estratégia de ordenação das random keys e simulação temporal da rota.
