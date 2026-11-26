@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_L_12_01.txt
+RKO: SA | 
+Sol: 0.140 0.196 0.434 0.896 0.213 0.754 0.424 0.991 0.259 0.238 0.310 0.741 
+ofv: 7953.000000
+Best time: 0.000
+Total time:12.001 

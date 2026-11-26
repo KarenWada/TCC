@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-RESULTADOS="../Experimentos_TDTSP/Nivel_3/Resultados"
+RESULTADOS="../Experimentos_TDTSP/Nivel_4_GPT/Resultados"
 ORIGEM="../Results"
 
 mkdir -p "$RESULTADOS"

@@ -28,6 +28,10 @@
 #include <omp.h>
 #include <atomic>
 
+#include <thread>
+#include <condition_variable>
+#include <mutex>
+
 // RKO data
 #include "../Data.h" 
 
@@ -244,8 +248,41 @@ int main(int argc, char *argv[ ])
                         }
                         
                         // calls the metaheuristic function
-                        function_mh(runData, data);
+                        if (NUM_MH == 1) {
+                            std::mutex timer_mutex;
+                            std::condition_variable timer_cv;
+                            bool finished = false;
 
+                            std::thread timer([&]() {
+                                std::unique_lock<std::mutex> lock(timer_mutex);
+
+                                double remaining = std::max(
+                                    0.0,
+                                    runData.MAXTIME - (get_time_in_seconds() - start_time)
+                                );
+
+                                if (!timer_cv.wait_for(
+                                    lock,
+                                    std::chrono::duration<double>(remaining),
+                                    [&]() { return finished; }
+                                )) {
+                                    stop_execution.store(true);
+                                }
+                            });
+
+                            function_mh(runData, data);
+
+                            {
+                                std::lock_guard<std::mutex> lock(timer_mutex);
+                                finished = true;
+                            }
+
+                            timer_cv.notify_one();
+                            timer.join();
+
+                        } else {
+                            function_mh(runData, data);
+                        }
                         // cancels when a thread ends
                         stop_execution.store(true);
                         #pragma omp cancel for

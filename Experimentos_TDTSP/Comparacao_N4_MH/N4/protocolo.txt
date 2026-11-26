@@ -1,0 +1,4 @@
+decoder=N4
+maxruns=5
+time_limit=number_of_customers_seconds
+selection=Instance_{S,M,L}_{clients}_01.txt

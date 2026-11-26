@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_M_10_01.txt
+RKO: LNS | 
+Sol: 0.758 0.889 0.234 0.097 0.500 0.397 0.347 0.516 0.528 0.182 
+ofv: 6655.000000
+Best time: 0.001
+Total time:10.000 

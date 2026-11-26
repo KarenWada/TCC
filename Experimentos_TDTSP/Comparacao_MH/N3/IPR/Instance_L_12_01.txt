@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_L_12_01.txt
+RKO: IPR | 
+Sol: 0.868 0.956 0.296 0.325 0.975 0.477 0.332 0.767 0.773 0.310 0.071 0.011 
+ofv: 8256.000000
+Best time: 0.000
+Total time:12.000 

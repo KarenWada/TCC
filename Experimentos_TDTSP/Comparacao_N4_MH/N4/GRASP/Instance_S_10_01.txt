@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_S_10_01.txt
+RKO: GRASP | 
+Sol: 0.761 0.970 0.527 0.627 0.388 0.083 0.899 0.920 0.828 0.370 
+ofv: 6705.000000
+Best time: 0.003
+Total time:10.000 

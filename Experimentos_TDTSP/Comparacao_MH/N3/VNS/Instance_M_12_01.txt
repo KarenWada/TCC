@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_M_12_01.txt
+RKO: VNS | 
+Sol: 0.585 0.462 0.278 0.327 0.519 0.447 0.438 0.586 0.586 0.302 0.274 0.907 
+ofv: 7707.000000
+Best time: 0.005
+Total time:12.000 

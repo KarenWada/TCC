@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_M_12_01.txt
+RKO: BRKGA-CS | 
+Sol: 0.180 0.419 0.338 0.144 0.039 0.288 0.038 0.014 0.734 0.528 0.754 0.389 
+ofv: 7707.000000
+Best time: 0.000
+Total time:12.000 

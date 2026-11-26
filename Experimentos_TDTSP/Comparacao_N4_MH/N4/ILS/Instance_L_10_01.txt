@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_L_10_01.txt
+RKO: ILS | 
+Sol: 0.856 0.858 0.347 0.737 0.599 0.639 0.219 0.091 0.347 0.870 
+ofv: 6830.000000
+Best time: 0.003
+Total time:10.000 

@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_M_12_01.txt
+RKO: PSO | 
+Sol: 0.775 0.739 0.430 0.622 0.763 0.730 0.700 0.910 0.792 0.601 0.423 0.962 
+ofv: 7707.000000
+Best time: 0.371
+Total time:12.000 

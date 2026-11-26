@@ -1,0 +1,8 @@
+
+
+Instance: ../Instances/KP/10_14_customers/Instance_M_10_01.txt
+RKO: GA | 
+Sol: 0.157 0.762 0.045 0.146 0.426 0.542 0.586 0.526 0.128 0.531 
+ofv: 6655.000000
+Best time: 0.000
+Total time:10.001 
